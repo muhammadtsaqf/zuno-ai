@@ -86,7 +86,12 @@ class _SplashScreenState extends State<SplashScreen> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: AppTheme.primaryNeon.withOpacity(0.2),
-                blurRadius: 100,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppTheme.primaryNeon.withOpacity(0.2),
+                    blurRadius: 100,
+                  ),
+                ],
               ),
             ),
           ),
@@ -99,7 +104,12 @@ class _SplashScreenState extends State<SplashScreen> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: AppTheme.secondaryNeon.withOpacity(0.15),
-                blurRadius: 100,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppTheme.secondaryNeon.withOpacity(0.15),
+                    blurRadius: 100,
+                  ),
+                ],
               ),
             ),
           ),

@@ -70,7 +70,7 @@ class ChatBubble extends StatelessWidget {
                       BoxShadow(
                         color: isUser
                             ? AppTheme.primaryNeon.withOpacity(0.2)
-                            : Colors.black25,
+                            : Colors.black26,
                         blurRadius: 8,
                         offset: const Offset(0, 4),
                       )
