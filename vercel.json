@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/routes/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/register", "dest": "/api/routes/register.js" },
+    { "src": "/api/login", "dest": "/api/routes/login.js" },
+    { "src": "/api/sessions", "dest": "/api/routes/sessions.js" },
+    { "src": "/api/chat", "dest": "/api/routes/chat.js" },
+    { "src": "/api/version", "dest": "/api/routes/version.js" }
+  ]
+}
