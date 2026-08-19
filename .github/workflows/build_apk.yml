@@ -39,22 +39,26 @@ jobs:
           cd zuno_app
           flutter pub get
 
-      - name: Build APK (Release & Split Per ABI)
+      - name: Build APK (Release - Universal, 32/64 bit)
         run: |
           cd zuno_app
-          flutter build apk --release --split-per-abi
+          flutter build apk --release
+
+      - name: Rename APK
+        run: |
+          mv zuno_app/build/app/outputs/flutter-apk/app-release.apk zuno_app/build/app/outputs/flutter-apk/Zuno-AI-${GITHUB_REF_NAME}.apk
 
       - name: Upload Release APK as Artifact
         uses: actions/upload-artifact@v4
         with:
           name: zuno-ai-apk
-          path: zuno_app/build/app/outputs/flutter-apk/*.apk
+          path: zuno_app/build/app/outputs/flutter-apk/Zuno-AI-*.apk
 
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: zuno_app/build/app/outputs/flutter-apk/*.apk
+          files: zuno_app/build/app/outputs/flutter-apk/Zuno-AI-*.apk
           generate_release_notes: true
           draft: false
           prerelease: false
