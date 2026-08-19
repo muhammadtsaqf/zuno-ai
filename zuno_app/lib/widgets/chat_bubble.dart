@@ -48,7 +48,7 @@ class ChatBubble extends StatelessWidget {
           ],
           Flexible(
             child: Column(
-              crossAxisAlignment: isUser ? CrossAlignment.end : CrossAlignment.start,
+              crossAxisAlignment: isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
               children: [
                 Container(
                   padding: const EdgeInsets.all(16),

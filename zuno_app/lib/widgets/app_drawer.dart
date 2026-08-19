@@ -47,7 +47,7 @@ class AppDrawer extends StatelessWidget {
                     const SizedBox(width: 12),
                     Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             currentUser?.name ?? 'ZUNO AI',

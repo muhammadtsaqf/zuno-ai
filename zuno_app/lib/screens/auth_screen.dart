@@ -120,7 +120,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   child: Form(
                     key: _formKey,
                     child: Column(
-                      crossAxisAlignment: CrossAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         if (_isLogin) ...[
                           const Text(

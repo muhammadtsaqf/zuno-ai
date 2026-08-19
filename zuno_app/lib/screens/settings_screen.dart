@@ -144,7 +144,7 @@ class SettingsScreen extends StatelessWidget {
               border: Border.all(color: AppTheme.surfaceDark),
             ),
             child: const Column(
-              crossAxisAlignment: CrossAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -79,15 +79,15 @@ class AppPosterBanner extends StatelessWidget {
           ],
         ),
         child: Column(
-          crossAxisAlignment: CrossAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
-                const AppIconBadge(size: 48, showGlow: true),
+                const AppIconBadge(size: 48),
                 const SizedBox(width: 14),
                 Expanded(
                   child: Column(
-                    crossAxisAlignment: CrossAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [

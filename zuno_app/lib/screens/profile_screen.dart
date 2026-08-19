@@ -130,7 +130,7 @@ class ProfileScreen extends StatelessWidget {
                   SizedBox(width: 14),
                   Expanded(
                     child: Column(
-                      crossAxisAlignment: CrossAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Zuno AI Pro Access',
