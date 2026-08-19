@@ -1,7 +1,8 @@
-import 'package:flutter/material';
+import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
 import '../models/ai_models.dart';
+import '../providers/auth_provider.dart';
 import '../providers/chat_provider.dart';
 import '../theme/app_theme.dart';
 import '../widgets/app_drawer.dart';
@@ -41,8 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final chatProvider = Provider.of<ChatProvider>(context);
-    final messages = chatProvider.currentMessages;
+    final chatProvider = Provider.of<ChatProvider>(context);    final authProvider = Provider.of<AuthProvider>(context, listen: false);    final messages = chatProvider.currentMessages;
 
     _scrollToBottom();
 

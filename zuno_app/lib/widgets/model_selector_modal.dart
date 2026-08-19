@@ -1,4 +1,4 @@
-import 'package:flutter/material';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/ai_models.dart';
 import '../providers/chat_provider.dart';

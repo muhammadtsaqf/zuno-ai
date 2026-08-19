@@ -1,4 +1,4 @@
-import 'package:flutter/material';
+import 'package:flutter/material.dart';
 import 'app_logo.dart';
 import '../theme/app_theme.dart';
 

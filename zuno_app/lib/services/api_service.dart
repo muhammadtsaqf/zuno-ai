@@ -107,3 +107,4 @@ class ApiService {
       await http.delete(Uri.parse(endpoint)).timeout(const Duration(seconds: 15));
     } catch (_) {}
   }
+}
